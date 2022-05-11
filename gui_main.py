@@ -9,8 +9,7 @@ def student_name(user_name):
         else:
             return user_name
     except ValueError as e:
-        print(f"Error = {e}")
-        return "Error"
+        return(f"Error = {e}")
 
 def student_score(user_score):
     try:
@@ -20,8 +19,7 @@ def student_score(user_score):
         else:
             return user_score
     except ValueError as e:
-        print(f"Error = {e}")
-        return "Error"
+        return f"Error = {e}"
 
 def letter_grade(user_score):
     try:
@@ -41,8 +39,7 @@ def letter_grade(user_score):
                 return("F")
     # for values like <0 or >100 or 'ten'
     except ValueError as e:
-        print(f"Error = {e}")
-        return "Error"
+        return f"Error = {e}"
 
 
 class GUI:
